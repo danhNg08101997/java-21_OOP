@@ -35,6 +35,8 @@ public class Main {
                         SinhVien sv = new SinhVien();
                         sv.nhapSinhVien();
                         dssv.themSinhVien(sv);
+                        sv.tinhDiemTB();
+                        sv.xepLoaiSV();
                         break;
                     // Xuất sinh viên
                     case 2:
@@ -42,9 +44,11 @@ public class Main {
                         break;
                     // Sinh viên có điểm trung bình cao nhất
                     case 3:
+                        dssv.svDiemTBCaoNhat().xuatSinhVien(1);
                         break;
                     // In ra tất cả sinh viên yếu
                     case 4:
+                        dssv.tatCaSinhVienYeu();
                         break;
                     // Tìm sinh viên theo tên
                     case 5:
